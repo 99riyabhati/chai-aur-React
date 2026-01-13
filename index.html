@@ -3,298 +3,242 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ignite Fitness | Unisex Gym</title>
+
+<title>Ignite Fitness | Unisex Gym in Greater Noida</title>
+<meta name="description" content="Ignite Fitness is a premium unisex gym in Greater Noida offering personal training, bodybuilding, cardio workouts, weight training, Zumba classes, and diet consultation.">
+<meta name="keywords" content="Ignite Fitness, Gym in Greater Noida, Personal Training, Bodybuilding, Cardio, Zumba, Weight Training">
+
+<!-- Google verification -->
+<meta name="google-site-verification" content="google7bf11c64e2432680" />
+
+<!-- Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Gym",
+  "name": "Ignite Fitness",
+  "image": "https://99riyabhati.github.io/ignite-fitness/gym1.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Near Banthla Flyover, Kasana Complex, Chirori Road, Loni",
+    "addressLocality": "Ghaziabad",
+    "addressRegion": "UP",
+    "postalCode": "201306",
+    "addressCountry": "IN"
+  },
+  "telephone": ["+91-9217494031","+91-8826593930"],
+  "url": "https://99riyabhati.github.io/ignite-fitness/"
+}
+</script>
 
 <style>
-* {
-  box-sizing: border-box;
+*{box-sizing:border-box}
+body{margin:0;font-family:Segoe UI;background:#000;color:#fff}
+
+header{
+min-height:100vh;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.85)),url('FitnessGym.jpg');
+background-size:cover;
+background-position:center top;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
 }
 
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #000;
-  color: #fff;
+header h1{font-size:56px;color:#ff9800}
+header p{font-size:20px}
+
+.btn{
+margin-top:25px;
+padding:14px 32px;
+background:linear-gradient(90deg,#ff9800,#ff5722);
+color:#000;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
 }
 
-/* ========== HERO / HEADER ========== */
-header {
-  min-height: 100vh;
-
-  background-image:
-    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85)),
-    url('FitnessGym.jpg');
-
-  background-size: cover;
-  background-position: center top; /* 🔥 TOP PART FIX */
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* 🔥 PARALLAX */
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
+section{
+max-width:1200px;
+margin:50px auto;
+padding:45px 25px;
+background:#121212;
+border-radius:18px;
 }
 
-header h1 {
-  font-size: 56px;
-  letter-spacing: 4px;
-  color: #ff9800;
-  margin: 0;
+h2{text-align:center;color:#ff9800}
+
+ul{list-style:none;padding:0}
+ul li{
+background:#1c1c1c;
+padding:15px;
+margin-bottom:12px;
+border-left:5px solid #ff9800;
+border-radius:8px;
 }
 
-header p {
-  font-size: 20px;
-  margin-top: 15px;
-  color: #eee;
+.offer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 }
 
-/* ========== BUTTON ========== */
-.btn {
-  margin-top: 25px;
-  padding: 14px 32px;
-  background: linear-gradient(90deg, #ff9800, #ff5722);
-  color: #000;
-  font-weight: bold;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: 0.3s;
+.offer-box{
+background:linear-gradient(135deg,#ff9800,#ff5722);
+padding:30px;
+border-radius:20px;
+text-align:center;
+font-size:22px;
+font-weight:bold;
+color:#000;
 }
 
-.btn:hover {
-  transform: scale(1.08);
-  box-shadow: 0 0 25px #ff9800;
+.form-box{
+max-width:420px;
+margin:auto;
+padding:30px;
+background:#0f0f0f;
+border-radius:18px;
 }
 
-/* ========== SECTION ========== */
-section {
-  max-width: 1200px;
-  margin: 50px auto;
-  padding: 45px 25px;
-  background: #121212;
-  border-radius: 18px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.7);
+.form-box input,.form-box select{
+width:100%;
+padding:14px;
+margin-bottom:16px;
+background:#1c1c1c;
+border:1px solid #ff9800;
+border-radius:10px;
+color:#fff;
 }
 
-h2 {
-  text-align: center;
-  color: #ff9800;
-  font-size: 32px;
-  margin-bottom: 35px;
+.form-box button{
+width:100%;
+padding:14px;
+border:none;
+border-radius:30px;
+background:linear-gradient(90deg,#ff9800,#ff5722);
+font-weight:bold;
 }
 
-/* ========== SERVICES ========== */
-ul {
-  list-style: none;
-  padding: 0;
+.success-message{
+text-align:center;
+margin-top:15px;
+color:#00ff7f;
+font-weight:bold;
+display:none;
 }
 
-ul li {
-  background: #1c1c1c;
-  padding: 15px;
-  margin-bottom: 12px;
-  border-left: 5px solid #ff9800;
-  border-radius: 8px;
-  font-size: 18px;
-  transition: 0.3s;
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
 }
 
-ul li:hover {
-  background: #242424;
-  transform: translateX(8px);
+.gallery-img{
+width:100%;
+height:230px;
+object-fit:cover;
+border-radius:18px;
 }
 
-/* ========== OFFERS ========== */
-.offer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  gap: 25px;
-}
-
-.offer-box {
-  background: linear-gradient(135deg, #ff9800, #ff5722);
-  padding: 30px;
-  border-radius: 20px;
-  text-align: center;
-  font-size: 22px;
-  font-weight: bold;
-  color: #000;
-  transition: 0.3s;
-}
-
-.offer-box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 25px 45px rgba(255,87,34,0.7);
-}
-
-/* ========== FORM ========== */
-.form-box {
-  max-width: 420px;
-  margin: auto;
-  padding: 30px;
-  background: #0f0f0f;
-  border-radius: 18px;
-  box-shadow: 0 0 30px rgba(255,152,0,0.5);
-}
-
-.form-box input,
-.form-box select {
-  width: 100%;
-  padding: 14px;
-  margin-bottom: 16px;
-  background: #1c1c1c;
-  border: 1px solid #ff9800;
-  border-radius: 10px;
-  color: #fff;
-  font-size: 16px;
-}
-
-.form-box input::placeholder {
-  color: #aaa;
-}
-
-.form-box input:focus,
-.form-box select:focus {
-  outline: none;
-  box-shadow: 0 0 10px #ff5722;
-}
-
-.form-box button {
-  width: 100%;
-  padding: 14px;
-  border: none;
-  border-radius: 30px;
-  background: linear-gradient(90deg, #ff9800, #ff5722);
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* ========== GALLERY ========== */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-  gap: 20px;
-}
-
-.gallery-img {
-  width: 100%;
-  height: 230px;
-  object-fit: cover;
-  border-radius: 18px;
-  transition: 0.4s;
-}
-
-.gallery-img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 25px 45px rgba(0,0,0,0.8);
-}
-
-/* ========== FOOTER ========== */
-footer {
-  text-align: center;
-  padding: 20px;
-  color: #aaa;
-  background: #000;
-}
-
-/* ========== SUCCESS MESSAGE ========== */
-.success-message {
-  text-align: center;
-  margin-top: 15px;
-  color: #00ff7f;
-  font-weight: bold;
-  display: none;
-}
-
-/* ========== MOBILE FIX (VERY IMPORTANT) ========== */
-@media (max-width: 768px) {
-  header {
-    background-attachment: scroll; /* ❌ Disable parallax on mobile */
-    background-position: top center;
-  }
-
-  header h1 {
-    font-size: 42px;
-  }
+footer{
+text-align:center;
+padding:20px;
+background:#000;
+color:#aaa;
 }
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
 <header>
-  <h1>IGNITE FITNESS</h1>
-  <p>Stay Fit Not Still | Unisex Gym</p>
-  <a href="#join" class="btn">Join Now</a>
+<h1>IGNITE FITNESS</h1>
+<p>Stay Fit Not Still | Unisex Gym</p>
+<a href="#join" class="btn">Join Now</a>
 </header>
 
-<!-- SERVICES -->
 <section>
-  <h2>Our Services</h2>
-  <ul>
-    <li>Personal Training</li>
-    <li>Bodybuilding</li>
-    <li>Cardio Training</li>
-    <li>Weight Training</li>
-    <li>Zumba Classes</li>
-    <li>Diet Consultation</li>
-  </ul>
+<h2>Our Services</h2>
+<ul>
+<li>Personal Training</li>
+<li>Bodybuilding</li>
+<li>Cardio Training</li>
+<li>Weight Training</li>
+<li>Zumba Classes</li>
+<li>Diet Consultation</li>
+</ul>
 </section>
 
-<!-- OFFERS -->
 <section>
-  <h2>Membership Plans</h2>
-  <div class="offer-grid">
-    <div class="offer-box">Monthly<br>₹1,500</div>
-    <div class="offer-box">Quarterly<br>₹4,000</div>
-    <div class="offer-box">Yearly<br>₹12,000</div>
-  </div>
+<h2>Membership Plans</h2>
+<div class="offer-grid">
+<div class="offer-box">Monthly<br>₹1,500</div>
+<div class="offer-box">Quarterly<br>₹4,000</div>
+<div class="offer-box">Yearly<br>₹12,000</div>
+</div>
 </section>
 
-<!-- JOIN -->
 <section id="join">
-  <h2>Join Now</h2>
-  <form class="form-box" id="emailForm">
-    <input type="text" placeholder="Your Name" required>
-    <input type="tel" placeholder="Mobile Number" required>
-    <select>
-      <option>Personal Training</option>
-      <option>Weight Training</option>
-      <option>Zumba</option>
-      <option>Cardio</option>
-    </select>
-    <button type="submit">Submit</button>
-  </form>
-  <p class="success-message">Thank you! We will contact you soon.</p>
+<h2>Join Now</h2>
+
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+
+<form class="form-box"
+action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdn33ZHdRGMlCs0MfmKqb5BuHaVQ8Pkj_iAIMVGtkGoXXvacw/formResponse"
+method="POST"
+target="hidden_iframe"
+onsubmit="showSuccess()">
+
+<input type="text" name="entry.1669721315" placeholder="Your Name" required>
+<input type="tel" name="entry.2012179293" placeholder="Mobile Number" required>
+
+<select name="entry.1862359980" required>
+<option value="">Select Service</option>
+<option>Personal Training</option>
+<option>Bodybuilding</option>
+<option>Cardio Training</option>
+<option>Weight Training</option>
+<option>Zumba Classes</option>
+<option>Diet Consultation</option>
+</select>
+
+<button type="submit">Submit</button>
+</form>
+
+<p class="success-message" id="successMsg">
+✅ Thank you! We will contact you soon.
+</p>
 </section>
 
-<!-- GALLERY -->
 <section>
-  <h2>Gallery</h2>
-  <div class="gallery">
-    <img src="gym1.jpg" class="gallery-img">
-    <img src="gym2.jpg" class="gallery-img">
-    <img src="gym3.jpg" class="gallery-img">
-  </div>
+<h2>Contact Us</h2>
+<p style="text-align:center">
+📍 Near Banthla Flyover, Kasana Complex, Chirori Road, Loni, Ghaziabad<br>
+📞 +91-9217494031, +91-8826593930
+</p>
 </section>
 
-<!-- FOOTER -->
+<section>
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="gym1.jpg" class="gallery-img">
+<img src="gym2.jpg" class="gallery-img">
+<img src="gym3.jpg" class="gallery-img">
+</div>
+</section>
+
 <footer>
-  © 2026 Ignite Fitness Gym | All Rights Reserved
+© 2026 Ignite Fitness Gym | All Rights Reserved
 </footer>
 
 <script>
-const form = document.getElementById('emailForm');
-const success = document.querySelector('.success-message');
-
-form.addEventListener('submit', e => {
-  e.preventDefault();
-  success.style.display = 'block';
-  form.reset();
-});
+function showSuccess(){
+document.getElementById("successMsg").style.display="block";
+setTimeout(()=>{document.querySelector(".form-box").reset();},500);
+}
 </script>
 
 </body>
